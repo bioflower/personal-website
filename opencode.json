@@ -1,0 +1,37 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "share": "disabled",
+  "mcp": {
+    "codebase-memory": {
+      "type": "local",
+      "command": [
+        "/Users/ngoclinhdo/.local/bin/codebase-memory-mcp"
+      ],
+      "enabled": true,
+      "timeout": 15000
+    }
+  },
+  "permission": {
+    "edit": "ask",
+    "bash": {
+      "*": "ask",
+      "npm run lint": "allow",
+      "npm run build": "allow",
+      "npm run dev": "allow",
+      "git status": "allow",
+      "git diff": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "git push *": "deny",
+      "git reset --hard *": "deny",
+      "rm -rf *": "deny"
+    }
+  },
+  "watcher": {
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      ".git/**"
+    ]
+  }
+}
