@@ -6,6 +6,7 @@
   --color-btn-secondary-bg: #000000;
   --color-btn-secondary-text: #FFFFFF;
   --color-skill-bg: rgba(177, 178, 181, 0.3);
+  --color-domain-bg: #FFFFFF;
   --color-skill-border: rgba(0, 0, 0, 0.3);
   --radius-btn: 10px;
 
@@ -30,6 +31,9 @@
   :root {
     --color-text: #FFFFFF;
     --color-bg: #16171d;
+    --color-domain-bg: #1e1f26;
+    --color-btn-primary-bg: #1e1f26;
+    --color-btn-primary-border: rgba(255, 255, 255, 0.3);
     --color-skill-bg: rgba(255, 255, 255, 0.1);
     --color-skill-border: rgba(255, 255, 255, 0.3);
   }

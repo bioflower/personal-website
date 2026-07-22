@@ -1,20 +1,13 @@
 import "./Home.css"
+import Nav from "../components/Nav"
 import { skillDomains } from "../data/skills"
+import { experienceEntries } from "../data/experience"
+import { contactMethods } from "../data/contact"
 
 function Home() {
   return (
     <div className="home">
-      <nav className="nav">
-        <span className="nav-logo">Andrea Do</span>
-        <div className="nav-spacer" />
-        <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="/notes">Notes</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+      <Nav />
       <section id="about" className="about">
         <div className="about-content">
           <div className="about-text">
@@ -45,6 +38,67 @@ function Home() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section id="experience" className="experience">
+        <div className="experience-inner">
+          <h2 className="experience-heading">Professional Experience</h2>
+          <div className="experience-list">
+            {experienceEntries.map((entry) => (
+              <div key={entry.timeline} className="experience-card">
+                <div className="experience-card-top">
+                  <div className="experience-card-left">
+                    <p className="experience-title">{entry.title}</p>
+                    <p className="experience-company">{entry.company}</p>
+                  </div>
+                  <div className="experience-card-right">
+                    <p className="experience-timeline">{entry.timeline}</p>
+                    <p className="experience-location">{entry.location}</p>
+                  </div>
+                </div>
+                <p className="experience-description">{entry.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="contact" className="contact">
+        <div className="contact-inner">
+          <h2 className="contact-heading">Let's Connect</h2>
+          <div className="contact-layout">
+            <div className="contact-cards">
+            {contactMethods.map((method) => (
+              <div key={method.label} className="contact-card">
+                <p className="contact-label">{method.label}</p>
+                <p className="contact-detail">{method.detail}</p>
+              </div>
+            ))}
+            </div>
+            <div className="contact-form">
+              <h3 className="form-heading">Send a Message</h3>
+              <form>
+                <div className="form-row">
+                  <div className="form-field">
+                    <label className="form-label">Your Name</label>
+                    <input type="text" className="form-input" placeholder="Your Name" />
+                  </div>
+                  <div className="form-field">
+                    <label className="form-label">Your Email</label>
+                    <input type="email" className="form-input" placeholder="Your Email" />
+                  </div>
+                </div>
+                <div className="form-field">
+                  <label className="form-label">Subject</label>
+                  <input type="text" className="form-input" placeholder="Subject" />
+                </div>
+                <div className="form-field form-field-message">
+                  <label className="form-label">Your Message</label>
+                  <textarea className="form-input form-textarea" placeholder="Your Message" />
+                </div>
+                <button type="submit" className="btn btn-secondary form-submit">Send Message</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>

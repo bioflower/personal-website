@@ -1,43 +1,5 @@
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  padding: 5px 20px;
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-skill-border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.nav-logo {
-  font-size: 16px;
-  color: var(--color-text);
-}
-
-.nav-spacer {
-  flex: 1;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
-}
-
-.nav-links a {
-  font-size: 16px;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
 .about {
-  padding: 48px 32px;
+  padding: 48px 64px;
 }
 
 .about-content {
@@ -55,32 +17,33 @@
 
 .greeting {
   font-size: 60px;
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--color-text);
-  margin: 0 0 6px 0;
-}
-
-.brief {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--color-text);
-  margin: 0 0 6px 0;
-}
-
-.interest {
-  font-size: 22px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.4;
   color: var(--color-text);
   margin: 0 0 24px 0;
 }
 
+.brief {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 20px 0;
+}
+
+.interest {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 32px 0;
+}
+
 .buttons {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 32px;
+  justify-content: center;
 }
 
 .btn {
@@ -89,10 +52,10 @@
   justify-content: center;
   height: 55px;
   border-radius: var(--radius-btn);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   box-sizing: border-box;
 }
 
@@ -138,10 +101,11 @@
 
 .skills-heading {
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.4;
   color: var(--color-text);
   margin: 0 0 32px 0;
+  text-align: center;
 }
 
 .skills-grid {
@@ -155,12 +119,12 @@
   padding: 24px;
   border-radius: var(--radius-btn);
   border: 1px solid var(--color-skill-border);
-  background: var(--color-skill-bg);
+  background: var(--color-domain-bg);
 }
 
 .skill-domain-title {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.4;
   color: var(--color-text);
   margin: 0 0 16px 0;
@@ -174,11 +138,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .skill-chip {
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.4;
   color: var(--color-text);
   background: var(--color-skill-bg);
@@ -186,6 +150,213 @@
   border-radius: var(--radius-btn);
   border: 1px solid var(--color-skill-border);
 }
+
+.experience {
+  padding: 48px 64px;
+}
+
+.experience-inner {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.experience-heading {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 48px 0;
+  text-align: center;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experience-card {
+  border: 1px solid var(--color-skill-border);
+  border-radius: var(--radius-btn);
+  background: var(--color-domain-bg);
+  padding: 24px;
+}
+
+.experience-card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.experience-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.experience-title {
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.experience-company {
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.experience-timeline {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.experience-location {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.experience-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.contact {
+  padding: 48px 64px;
+}
+
+.contact-inner {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 48px 0;
+  text-align: center;
+}
+
+.contact-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: stretch;
+}
+
+.contact-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.contact-card {
+  border: 1px solid var(--color-skill-border);
+  border-radius: var(--radius-btn);
+  background: var(--color-domain-bg);
+  padding: 24px;
+}
+
+.contact-detail {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 4px 0;
+}
+
+.contact-label {
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.contact-form {
+  flex: 1;
+  border: 1px solid var(--color-skill-border);
+  border-radius: var(--radius-btn);
+  background: var(--color-domain-bg);
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.form-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 8px 0;
+}
+
+.form-label {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.form-row .form-field {
+  flex: 1;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid var(--color-skill-border);
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: var(--sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.form-textarea {
+  min-height: 90px;
+  resize: vertical;
+  font-family: var(--sans);
+}
+
+.form-submit {
+  align-self: flex-end;
+  width: 190px;
+  height: 42px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 @media (max-width: 1024px) {
   .skills-grid {
@@ -198,6 +369,16 @@
     grid-template-columns: 1fr;
   }
   .about-content {
+    flex-direction: column;
+  }
+  .experience-card-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .experience-card-right {
+    text-align: left;
+  }
+  .contact-layout {
     flex-direction: column;
   }
 }

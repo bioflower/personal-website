@@ -1,0 +1,23 @@
+.notes {
+  padding: 96px 64px;
+  text-align: center;
+}
+
+.notes-inner {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.notes-heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+}
+
+.notes-message {
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
