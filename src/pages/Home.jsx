@@ -37,7 +37,6 @@ function Home() {
           <div className="skills-grid">
             {skillDomains.map((domain) => (
               <div key={domain.title} className="skill-domain">
-                <div className="skill-domain-bg" />
                 <h3 className="skill-domain-title">{domain.title}</h3>
                 <ul className="skill-list">
                   {domain.skills.map((skill) => (

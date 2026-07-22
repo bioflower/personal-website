@@ -5,7 +5,7 @@
   gap: 20px;
   padding: 5px 20px;
   background: var(--color-bg);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-skill-border);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -185,4 +185,19 @@
   padding: 4px 12px;
   border-radius: var(--radius-btn);
   border: 1px solid var(--color-skill-border);
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-content {
+    flex-direction: column;
+  }
 }

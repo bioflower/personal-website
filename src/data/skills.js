@@ -5,7 +5,7 @@ export const skillDomains = [
   },
   {
     title: "Data Engineering & Processing",
-    skills: ["ETL/ELT Pipelines", "Synethic Data Generation", "PostgreSQL", "Polars", "Pandas"],
+    skills: ["ETL/ELT Pipelines", "Synthetic Data Generation", "PostgreSQL", "Polars", "Pandas"],
   },
   {
     title: "Generative AI & LLM Systems",
