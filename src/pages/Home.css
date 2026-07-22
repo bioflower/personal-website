@@ -35,3 +35,93 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+.about {
+  padding: 48px 32px;
+}
+
+.about-content {
+  max-width: 1126px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.greeting {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 6px 0;
+}
+
+.brief {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 6px 0;
+}
+
+.interest {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 24px 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  border-radius: var(--radius-btn);
+  font-size: 18px;
+  line-height: 1.7;
+  text-decoration: none;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  width: 162px;
+  background: var(--color-btn-primary-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-btn-primary-border);
+}
+
+.btn-secondary {
+  width: 190px;
+  background: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border: none;
+}
+
+.portrait-placeholder {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.portrait-placeholder span {
+  font-size: 16px;
+  color: #888;
+}
