@@ -125,3 +125,64 @@
   font-size: 16px;
   color: #888;
 }
+
+.skills {
+  background: var(--color-bg);
+  padding: 48px 32px;
+}
+
+.skills-inner {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.skills-heading {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 32px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.skill-domain {
+  position: relative;
+  padding: 24px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--color-skill-border);
+  background: var(--color-skill-bg);
+}
+
+.skill-domain-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.skill-chip {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-text);
+  background: var(--color-skill-bg);
+  padding: 4px 12px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--color-skill-border);
+}
