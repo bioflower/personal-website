@@ -39,3 +39,16 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 640px) {
+  .nav-inner {
+    padding: 5px 24px;
+    gap: 10px;
+  }
+  .nav-links {
+    gap: 16px;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+}

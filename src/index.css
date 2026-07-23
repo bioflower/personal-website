@@ -5,6 +5,7 @@
   --color-btn-primary-border: #000000;
   --color-btn-secondary-bg: #000000;
   --color-btn-secondary-text: #FFFFFF;
+  --color-btn-secondary-border: transparent;
   --color-skill-bg: rgba(177, 178, 181, 0.3);
   --color-domain-bg: #FFFFFF;
   --color-skill-border: rgba(0, 0, 0, 0.3);
@@ -34,6 +35,7 @@
     --color-domain-bg: #1e1f26;
     --color-btn-primary-bg: #1e1f26;
     --color-btn-primary-border: rgba(255, 255, 255, 0.3);
+    --color-btn-secondary-border: rgba(255, 255, 255, 0.3);
     --color-skill-bg: rgba(255, 255, 255, 0.1);
     --color-skill-border: rgba(255, 255, 255, 0.3);
   }
