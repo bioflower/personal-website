@@ -73,20 +73,10 @@
   border: 1px solid var(--color-btn-secondary-border);
 }
 
-.portrait-placeholder {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+.portrait {
+  width: 400px;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
-}
-
-.portrait-placeholder span {
-  font-size: 16px;
-  color: #888;
 }
 
 .skills {
@@ -385,9 +375,8 @@
     flex-direction: column;
     align-items: center;
   }
-  .portrait-placeholder {
-    width: 200px;
-    height: 200px;
+  .portrait {
+    width: 280px;
   }
   .skills {
     padding: 32px 24px;
