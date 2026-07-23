@@ -1,5 +1,6 @@
 import "./Home.css"
 import "../components/Nav.css"
+import portrait from "../assets/portrait.webp"
 import { skillDomains } from "../data/skills"
 import { experienceEntries } from "../data/experience"
 import { contactMethods } from "../data/contact"
@@ -30,9 +31,7 @@ function Home() {
               <a href="/notes" className="btn btn-primary">Read my notes</a>
             </div>
           </div>
-          <div className="portrait-placeholder">
-            <span>Portrait</span>
-          </div>
+          <img className="portrait" src={portrait} alt="Portrait of Andrea Do" />
         </div>
       </section>
       <section id="skills" className="skills">
