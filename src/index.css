@@ -1,17 +1,22 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
+  --color-text: #000000;
+  --color-bg: #FFFFFF;
+  --color-btn-primary-bg: #FFFFFF;
+  --color-btn-primary-border: #000000;
+  --color-btn-secondary-bg: #000000;
+  --color-btn-secondary-text: #FFFFFF;
+  --color-skill-bg: rgba(177, 178, 181, 0.3);
+  --color-domain-bg: #FFFFFF;
+  --color-skill-border: rgba(0, 0, 0, 0.3);
+  --radius-btn: 10px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Work Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--color-text);
+  background: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,10 +29,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
+    --color-text: #FFFFFF;
+    --color-bg: #16171d;
+    --color-domain-bg: #1e1f26;
+    --color-btn-primary-bg: #1e1f26;
+    --color-btn-primary-border: rgba(255, 255, 255, 0.3);
+    --color-skill-bg: rgba(255, 255, 255, 0.1);
+    --color-skill-border: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -39,27 +47,11 @@ body {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
-  border-inline: 1px solid var(--border);
+  border-inline: 1px solid var(--color-skill-border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-  }
 }
 
 p {

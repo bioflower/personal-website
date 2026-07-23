@@ -78,6 +78,23 @@ Fix errors before declaring the task complete
 
 Do not run deployment commands, publish packages, push to GitHub, or modify remote infrastructure without explicit approval 
 
+## Deployment (AWS Amplify)
+
+The site uses client-side routing (via `window.location.pathname` checks in `App.jsx` — no router library). For paths like `/notes` to work in production, **AWS Amplify must be configured with a redirect/rewrite rule** that sends all requests to `index.html`:
+
+1. Open the Amplify console → your app → **Hosting** → **Rewrite and redirects**
+2. Add the following rule:
+   - **Source address:** `</^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|svg|txt|webp|woff|woff2)$)([^.]+$)/>`
+   - **Target address:** `/index.html`
+   - **Type:** `200 (Rewrite)`
+
+This ensures `/notes` (and any future paths) resolves to the SPA's `index.html` instead of returning a 404.
+
+Alternatively, add a rule per route:
+- **Source address:** `/notes`
+- **Target address:** `/index.html`
+- **Type:** `200 (Rewrite)`
+
 ## Git Practices
 - Do not commit automatically
 - Do not fun `git push`

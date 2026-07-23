@@ -1,22 +1,14 @@
-import './App.css'
+import Home from "./pages/Home"
+import Notes from "./pages/Notes"
 
 function App() {
-  return (
-    <>
-      <header>
-        <p className="site-title">Personal Website</p>
-      </header>
+  const path = window.location.pathname
 
-      <main>
-        <h1>Hello</h1>
-        <p>Coming soon.</p>
-      </main>
+  if (path === "/notes" || path === "/notes/") {
+    return <Notes />
+  }
 
-      <footer>
-        <p>&copy; 2026</p>
-      </footer>
-    </>
-  )
+  return <Home />
 }
 
 export default App

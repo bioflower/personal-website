@@ -9,6 +9,11 @@
       ],
       "enabled": true,
       "timeout": 15000
+    },
+    "penpot": {
+      "type": "remote",
+      "enabled": true,
+      "url": "http://localhost:4401/mcp"
     }
   },
   "permission": {
