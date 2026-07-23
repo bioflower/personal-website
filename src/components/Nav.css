@@ -44,11 +44,17 @@
   .nav-inner {
     padding: 5px 24px;
     gap: 10px;
+    justify-content: center;
+  }
+  .nav-logo {
+    display: none;
   }
   .nav-links {
-    gap: 16px;
+    gap: 8px;
+    flex-wrap: wrap;
+    row-gap: 4px;
   }
   .nav-links a {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
