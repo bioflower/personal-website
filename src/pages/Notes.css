@@ -21,3 +21,12 @@
   line-height: 1.4;
   color: var(--color-text);
 }
+
+@media (max-width: 640px) {
+  .notes {
+    padding: 48px 24px;
+  }
+  .notes-heading {
+    font-size: 36px;
+  }
+}

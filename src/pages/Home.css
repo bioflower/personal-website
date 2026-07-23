@@ -70,7 +70,7 @@
   width: 190px;
   background: var(--color-btn-secondary-bg);
   color: var(--color-btn-secondary-text);
-  border: none;
+  border: 1px solid var(--color-btn-secondary-border);
 }
 
 .portrait-placeholder {
@@ -365,11 +365,50 @@
 }
 
 @media (max-width: 640px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .about {
+    padding: 32px 24px;
   }
   .about-content {
     flex-direction: column;
+    gap: 32px;
+  }
+  .greeting {
+    font-size: 36px;
+  }
+  .brief {
+    font-size: 22px;
+  }
+  .interest {
+    font-size: 18px;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portrait-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+  .skills {
+    padding: 32px 24px;
+  }
+  .skills-heading {
+    font-size: 36px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-domain {
+    padding: 16px;
+  }
+  .experience {
+    padding: 32px 24px;
+  }
+  .experience-heading {
+    font-size: 36px;
+  }
+  .experience-card {
+    padding: 16px;
   }
   .experience-card-top {
     flex-direction: column;
@@ -378,7 +417,22 @@
   .experience-card-right {
     text-align: left;
   }
+  .contact {
+    padding: 32px 24px;
+  }
+  .contact-heading {
+    font-size: 36px;
+  }
   .contact-layout {
+    flex-direction: column;
+  }
+  .contact-card {
+    padding: 16px;
+  }
+  .contact-form {
+    padding: 16px;
+  }
+  .form-row {
     flex-direction: column;
   }
 }
