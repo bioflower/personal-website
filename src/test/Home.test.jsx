@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest"
+import { describe, it, expect, beforeEach, afterEach, vi } from "vitest"
 import { render, screen } from "@testing-library/react"
 import App from "../App"
 import { contactMethods } from "../data/contact"
