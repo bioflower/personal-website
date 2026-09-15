@@ -100,7 +100,9 @@ New `src/test/ContactForm.test.jsx` with `fetch` mocked via `vi.fn()`:
    with the correct URL and JSON body containing `access_key`.
 2. Error path (`success: false`) → shows the Web3Forms error message.
 3. Missing access key → shows "Form not configured" error without calling fetch.
-4. Honeypot filled → no fetch call (Web3Forms behavior; optional assertion).
+4. Honeypot field is hidden from the tab order (`tabIndex=-1`, `aria-hidden`).
+   Note: the component does not block submission based on `botcheck`; Web3Forms
+   rejects a filled honeypot server-side.
 
 Run `npm run lint` and `npm run build` before declaring complete.
 
