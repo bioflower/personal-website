@@ -11,7 +11,12 @@ function ContactForm() {
     event.preventDefault()
 
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    console.log("[ContactForm] submit", {
+      accessKeyConfigured: Boolean(accessKey),
+      accessKeyPreview: accessKey ? `${accessKey.slice(0, 4)}...${accessKey.slice(-4)}` : null,
+    })
     if (!accessKey) {
+      console.error("[ContactForm] access key missing — check VITE_WEB3FORMS_ACCESS_KEY")
       setStatus("error")
       setMessage("Form not configured. Please try again later.")
       return
@@ -21,6 +26,7 @@ function ContactForm() {
     const formData = new FormData(form)
     formData.append("access_key", accessKey)
     const payload = Object.fromEntries(formData)
+    console.log("[ContactForm] payload", payload)
 
     setStatus("sending")
     setMessage("")
@@ -34,7 +40,9 @@ function ContactForm() {
         },
         body: JSON.stringify(payload),
       })
+      console.log("[ContactForm] response status", response.status)
       const result = await response.json()
+      console.log("[ContactForm] response body", result)
 
       if (result.success) {
         setStatus("success")
@@ -44,7 +52,8 @@ function ContactForm() {
         setStatus("error")
         setMessage(result.message || "Something went wrong. Please try again.")
       }
-    } catch {
+    } catch (error) {
+      console.error("[ContactForm] fetch error", error)
       setStatus("error")
       setMessage("Something went wrong. Please try again.")
     }
