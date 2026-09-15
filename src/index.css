@@ -9,6 +9,8 @@
   --color-skill-bg: rgba(177, 178, 181, 0.3);
   --color-domain-bg: #FFFFFF;
   --color-skill-border: rgba(0, 0, 0, 0.3);
+  --color-status-success: #1a7f37;
+  --color-status-error: #b42318;
   --radius-btn: 10px;
 
   --sans: 'Work Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -38,6 +40,8 @@
     --color-btn-secondary-border: rgba(255, 255, 255, 0.3);
     --color-skill-bg: rgba(255, 255, 255, 0.1);
     --color-skill-border: rgba(255, 255, 255, 0.3);
+    --color-status-success: #4ade80;
+    --color-status-error: #f87171;
   }
 }
 
