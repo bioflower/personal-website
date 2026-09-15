@@ -291,63 +291,6 @@
 }
 
 
-.form-heading {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: var(--color-text);
-  margin: 0 0 8px 0;
-}
-
-.form-label {
-  font-size: 16px;
-  line-height: 1.4;
-  color: var(--color-text);
-}
-
-.form-row {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
-.form-row .form-field {
-  flex: 1;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  border: 1px solid var(--color-skill-border);
-  border-radius: 6px;
-  font-size: 16px;
-  font-family: var(--sans);
-  color: var(--color-text);
-  background: var(--color-bg);
-}
-
-.form-textarea {
-  min-height: 90px;
-  resize: vertical;
-  font-family: var(--sans);
-}
-
-.form-submit {
-  align-self: flex-end;
-  width: 190px;
-  height: 42px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-
 @media (max-width: 1024px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -433,8 +376,5 @@
   }
   .contact-form {
     padding: 16px;
-  }
-  .form-row {
-    flex-direction: column;
   }
 }
