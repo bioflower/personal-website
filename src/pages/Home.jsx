@@ -4,6 +4,7 @@ import portrait from "../assets/portrait.webp"
 import { skillDomains } from "../data/skills"
 import { experienceEntries } from "../data/experience"
 import { contactMethods } from "../data/contact"
+import ContactForm from "../components/ContactForm"
 
 function Home() {
   return (
@@ -86,28 +87,7 @@ function Home() {
             ))}
             </div>
             <div className="contact-form">
-              <h3 className="form-heading">Send a Message</h3>
-              <form>
-                <div className="form-row">
-                  <div className="form-field">
-                    <label className="form-label">Your Name</label>
-                    <input type="text" className="form-input" placeholder="Your Name" />
-                  </div>
-                  <div className="form-field">
-                    <label className="form-label">Your Email</label>
-                    <input type="email" className="form-input" placeholder="Your Email" />
-                  </div>
-                </div>
-                <div className="form-field">
-                  <label className="form-label">Subject</label>
-                  <input type="text" className="form-input" placeholder="Subject" />
-                </div>
-                <div className="form-field form-field-message">
-                  <label className="form-label">Your Message</label>
-                  <textarea className="form-input form-textarea" placeholder="Your Message" />
-                </div>
-                <button type="submit" className="btn btn-secondary form-submit">Send Message</button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
